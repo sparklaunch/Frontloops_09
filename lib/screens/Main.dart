@@ -3,6 +3,7 @@ import "package:flutter/material.dart";
 import "package:frontloops_09/components/NavigationBar.dart";
 import "package:frontloops_09/components/Jumbotron.dart";
 import "package:frontloops_09/components/Features.dart";
+import "package:frontloops_09/components/Middle.dart";
 
 class Main extends StatelessWidget {
   @override
@@ -24,6 +25,7 @@ class Main extends StatelessWidget {
                   color: Color.fromRGBO(243, 243, 243, 1),
                 ),
                 Features(),
+                Middle(),
               ],
             ),
           ),
