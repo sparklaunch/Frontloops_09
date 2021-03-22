@@ -4,6 +4,7 @@ import "package:frontloops_09/components/NavigationBar.dart";
 import "package:frontloops_09/components/Jumbotron.dart";
 import "package:frontloops_09/components/Features.dart";
 import "package:frontloops_09/components/Middle.dart";
+import "package:frontloops_09/components/Last.dart";
 
 class Main extends StatelessWidget {
   @override
@@ -26,6 +27,7 @@ class Main extends StatelessWidget {
                 ),
                 Features(),
                 Middle(),
+                Last(),
               ],
             ),
           ),
