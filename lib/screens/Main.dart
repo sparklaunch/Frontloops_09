@@ -10,15 +10,22 @@ class Main extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.white,
       body: SafeArea(
-        child: Container(
-          width: double.infinity,
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              NavigationBar(),
-              Jumbotron(),
-              Features(),
-            ],
+        child: SingleChildScrollView(
+          child: Container(
+            width: double.infinity,
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                NavigationBar(),
+                Jumbotron(),
+                Divider(
+                  height: 3.0,
+                  thickness: 3.0,
+                  color: Color.fromRGBO(243, 243, 243, 1),
+                ),
+                Features(),
+              ],
+            ),
           ),
         ),
       ),
