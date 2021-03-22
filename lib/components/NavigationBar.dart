@@ -13,9 +13,7 @@ class _NavigationBarState extends State<NavigationBar> {
   Widget build(BuildContext context) {
     return Container(
       width: kWidth,
-      padding: EdgeInsets.symmetric(
-        vertical: 20.0,
-      ),
+      padding: kNavigationBarPadding,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
@@ -43,13 +41,7 @@ class _NavigationBarState extends State<NavigationBar> {
               Container(
                 width: kTextFieldWidth,
                 child: TextField(
-                  decoration: InputDecoration(
-                    hintText: "How can we help you?",
-                    isDense: true,
-                    contentPadding: EdgeInsets.symmetric(
-                      vertical: 8.0,
-                    ),
-                  ),
+                  decoration: kTextFieldDecoration,
                   onChanged: (inputText) {
                     setState(() {
                       this.text = inputText;

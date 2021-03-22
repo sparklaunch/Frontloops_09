@@ -1,5 +1,7 @@
 import "package:flutter/material.dart";
 
+import "package:frontloops_09/utilities/constants.dart";
+
 import "package:frontloops_09/components/NavigationBar.dart";
 import "package:frontloops_09/components/Jumbotron.dart";
 import "package:frontloops_09/components/Features.dart";
@@ -20,11 +22,7 @@ class Main extends StatelessWidget {
               children: [
                 NavigationBar(),
                 Jumbotron(),
-                Divider(
-                  height: 3.0,
-                  thickness: 3.0,
-                  color: Color.fromRGBO(243, 243, 243, 1),
-                ),
+                kMiddleDivider,
                 Features(),
                 Middle(),
                 Last(),
